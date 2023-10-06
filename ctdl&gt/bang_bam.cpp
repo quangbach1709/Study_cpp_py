@@ -2,7 +2,6 @@
 #include<string>
 
 using namespace std;
-
 //Muc tu trong tu dien
 struct MucTu
 {
