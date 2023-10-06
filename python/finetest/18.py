@@ -1,0 +1,3 @@
+ban_hang ={}
+
+while 
