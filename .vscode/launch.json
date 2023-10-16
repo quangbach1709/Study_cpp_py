@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/VScode/C++in_class/TH7",
-      "program": "d:/VScode/C++in_class/TH7/build/Debug/outDebug",
+      "cwd": "d:/Study_c++_py/ctdl&gt",
+      "program": "d:/Study_c++_py/ctdl&gt/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
