@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Study_c++_py/ctdl&gt",
-      "program": "d:/Study_c++_py/ctdl&gt/build/Debug/outDebug",
+      "cwd": "d:/Study_c++_py/C++",
+      "program": "d:/Study_c++_py/C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
