@@ -18,6 +18,7 @@ int main() {
     cin >> n;
     thapHaNoi(n, 'A', 'C', 'B'); // A, B và C là tên của các cột
     return 0;
+    
 }
 
 

@@ -59,5 +59,6 @@
   "files.associations": {
     "new": "cpp"
   },
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "Cascadia Code,Consolas, 'Courier New', monospace"
 }
