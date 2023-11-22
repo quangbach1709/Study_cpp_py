@@ -60,5 +60,6 @@
     "new": "cpp"
   },
   "files.autoSave": "afterDelay",
-  "editor.fontFamily": "Cascadia Code,Consolas, 'Courier New', monospace"
+  "editor.fontFamily": "Cascadia Code,Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16
 }
