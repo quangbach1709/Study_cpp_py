@@ -13,10 +13,10 @@ void thapHaNoi(int n, char cotGoc, char cotDich, char cotTrungGian) {
 }
 
 int main() {
-    int n; // số đĩa
+    int n; // so dia
     cout << "Nhap so dia: ";
     cin >> n;
-    thapHaNoi(n, 'A', 'C', 'B'); // A, B và C là tên của các cột
+    thapHaNoi(n, 'A', 'C', 'B'); // ABC la ten cot
     return 0;
     
 }
