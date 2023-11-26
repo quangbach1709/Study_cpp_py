@@ -1,0 +1,31 @@
+str=quangbach
+
+str.upper() (Viet hoa chuoi)
+=> QUANGBACH
+
+str.lower() (Viet thuong chuoi)
+=> quangbach
+
+str.capitalize() (Viet hoa dau chuoi)
+=> Quangbach
+
+str.replace("c","z") (Chuyen ky tu c => z )
+=> quangbazh
+
+str=Tong,Quang,Bach
+
+str.split(",") (Tach chuoi thanh dang list)
+["Tong","Quang","Bach"]
+
+str.len() (Dua ra so ky tu trong chuoi)
+
+str.join(['1','2']) (Cong chuoi)
+=> 1quangbach2
+
+str.strip() (xoa dau cah 2 dau)
+
+str.count('a') (Dem so lan xua hien cua a)
+
+str.index('a') (Dua ra vi tri ma 'a' xuat hien trong chuoi)
+
+

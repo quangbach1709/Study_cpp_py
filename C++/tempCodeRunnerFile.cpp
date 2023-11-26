@@ -1,20 +1,24 @@
-#include <iostream>
+#include<iostream>
+
 using namespace std;
 
-void thapHaNoi(int n, char cotGoc, char cotDich, char cotTrungGian) {
-    if (n == 1) {
-        cout << "Di chuyen dia 1 tu cot " << cotGoc << " den cot " << cotDich << endl;
-        return;
+int dequy(int n)
+{
+    if (n==1)
+    {
+        return 1;
     }
-    thapHaNoi(n - 1, cotGoc, cotTrungGian, cotDich);
-    cout << "Di chuyen dia " << n << " tu cot " << cotGoc << " den cot " << cotDich << endl;
-    thapHaNoi(n - 1, cotTrungGian, cotDich, cotGoc);
+    else
+        return n*dequy(n-1);
+    
 }
 
-int main() {
-    int n; // số đĩa
-    cout << "Nhap so dia: ";
-    cin >> n;
-    thapHaNoi(n, 'A', 'C', 'B'); // A, B và C là tên của các cột
+int main()
+{
+    int n;
+    cout<<"Nhap N: ";
+    cin>>n;
+
+    cout<<dequy(n);
     return 0;
 }
