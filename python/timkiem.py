@@ -1,14 +1,56 @@
-def timKiemToiNhatDauTien(danhSach, dieuKien):
-    for phanTu in danhSach:
-        if dieuKien(phanTu):
-            return phanTu
-    return None  # Trả về None nếu không tìm thấy phần tử thỏa mãn điều kiện
+from queue import PriorityQueue
+v = 14
+graph = [[] for i in range(v)]
 
-# Ví dụ sử dụng: Tìm số chẵn đầu tiên trong danh sách các số nguyên
-danhSachSo = [1, 3, 5, 7, 8, 9, 10, 12]
-soChan = timKiemToiNhatDauTien(danhSachSo, lambda x: x % 2 == 0)
+# Function For Implementing Best First Search
+# Gives output path having lowest cost
 
-if soChan is not None:
-    print(f"Phan tu so chan dau tien trong danh sach la: {soChan}")
-else:
-    print("Khong tim thay so chan trong danh sach")
+
+def best_first_search(actual_Src, target, n):
+	visited = [False] * n
+	pq = PriorityQueue()
+	pq.put((0, actual_Src))
+	visited[actual_Src] = True
+	
+	while pq.empty() == False:
+		u = pq.get()[1]
+		# Displaying the path having lowest cost
+		print(u, end=" ")
+		if u == target:
+			break
+
+		for v, c in graph[u]:
+			if visited[v] == False:
+				visited[v] = True
+				pq.put((c, v))
+	print()
+
+# Function for adding edges to graph
+
+
+def addedge(x, y, cost):
+	graph[x].append((y, cost))
+	graph[y].append((x, cost))
+
+
+# The nodes shown in above example(by alphabets) are
+# implemented using integers addedge(x,y,cost);
+addedge(0, 1, 3)
+addedge(0, 2, 6)
+addedge(0, 3, 5)
+addedge(1, 4, 9)
+addedge(1, 5, 8)
+addedge(2, 6, 12)
+addedge(2, 7, 14)
+addedge(3, 8, 7)
+addedge(8, 9, 5)
+addedge(8, 10, 6)
+addedge(9, 11, 1)
+addedge(9, 12, 10)
+addedge(9, 13, 2)
+
+source = 0
+target = 9
+best_first_search(source, target, v)
+
+# This code is contributed by Jyotheeswar Ganne
