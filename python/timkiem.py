@@ -1,25 +1,24 @@
+#Inpot thu vien hang doi
 from queue import PriorityQueue
 v = 14
+#Tao 1 do thi voi v dinh
 graph = [[] for i in range(v)]
 
-# Function For Implementing Best First Search
-# Gives output path having lowest cost
-
-
 def best_first_search(actual_Src, target, n):
-	visited = [False] * n
+	visited = [False] * n #Danh dau tat ca cac nut la False chua doc qua
 	pq = PriorityQueue()
-	pq.put((0, actual_Src))
-	visited[actual_Src] = True
+	pq.put((0, actual_Src))#Chi phi h cua nut goc = 0
+	visited[actual_Src] = True#Cac dinh da duyet qua = True
 	
 	while pq.empty() == False:
-		u = pq.get()[1]
-		# Displaying the path having lowest cost
+     
+		u = pq.get()[1]#Lay ra dinh co h thap nhat
 		print(u, end=" ")
 		if u == target:
-			break
+			break #Thoat neu tim thay dich
 
-		for v, c in graph[u]:
+		for v, c in graph[u]:#Duyet qua cac dinh ke
+      
 			if visited[v] == False:
 				visited[v] = True
 				pq.put((c, v))
