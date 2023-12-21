@@ -7,7 +7,7 @@ int main(){
     cin>>a;
     cout<<"b = ";
     cin>>b;
-    bool c=(a!=b)
+    bool c=(a!=b);
 
     return 0;
 } 
